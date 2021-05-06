@@ -26,5 +26,8 @@
 
     <!-- Set Window transition scale to 50% by default -->
     <fraction name="def_window_transition_scale">50%</fraction>
+    
+    <!-- 30 seconds for default screen timeout -->
+    <integer name="def_screen_off_timeout">30000</integer>
 
 </resources>
