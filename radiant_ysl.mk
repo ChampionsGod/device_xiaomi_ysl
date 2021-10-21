@@ -9,15 +9,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aosp/config/common.mk)
+# Inherit some common Radiant stuff.
+$(call inherit-product, vendor/radiant/config/common.mk)
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
+# Inherit some Radiant Flags
+TARGET_BOOT_ANIMATION_RES := 720
+RADIANT_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := ysl
+PRODUCT_NAME := radiant_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2

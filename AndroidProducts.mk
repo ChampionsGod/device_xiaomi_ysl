@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ysl.mk
+    $(LOCAL_DIR)/radiant_ysl.mk
