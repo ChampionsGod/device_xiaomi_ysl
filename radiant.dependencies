@@ -4,9 +4,7 @@
     "target_path": "device/xiaomi/msm8953-common"
   },
   {
-    "remote": "blobs",
     "repository": "vendor_xiaomi_ysl",
-    "target_path": "vendor/xiaomi/ysl",
-    "branch": "twelve"
+    "target_path": "vendor/xiaomi/ysl"
   }
 ]
