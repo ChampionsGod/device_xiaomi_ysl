@@ -6,5 +6,21 @@
   {
     "repository": "vendor_xiaomi_ysl",
     "target_path": "vendor/xiaomi/ysl"
+  },
+  {
+    "repository": "hardware_qcom-caf_ysl",
+    "target_path": "hardware/qcom-caf/msm8996/display",
+    "branch": "display-msm8996-s"
+  },
+  {
+    "repository": "hardware_qcom-caf_ysl",
+    "target_path": "hardware/qcom-caf/msm8996/media",
+    "branch": "media-msm8996-s"
+  },
+  {
+    "repository": "hardware_qcom-caf_ysl",
+    "target_path": "hardware/qcom-caf/msm8996/audio",
+    "branch": "audio-msm8996-s"
   }
+    
 ]
