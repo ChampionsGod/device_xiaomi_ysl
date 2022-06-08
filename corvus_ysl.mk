@@ -18,6 +18,9 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 # Inherit some Radiant Flags
 TARGET_BOOT_ANIMATION_RES := 720
 CORVUS_MAINTAINER := ChampionsGod
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
@@ -31,7 +34,11 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 12 SQ1D.220205.003 8069835 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:12/SQ1D.220205.003/8069835:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
