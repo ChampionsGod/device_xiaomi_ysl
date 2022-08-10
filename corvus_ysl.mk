@@ -9,18 +9,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common corvus stuff.
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
-# Inherit some Lineage Flags
+# Offline Charging
+TARGET_INCLUDE_PIXEL_CHARGER := true
+
+# Inherit some common corvus flags
+RAVEN_LAIR=Official
+CORVUS_MAINTAINER=ChampionsGod
+USE_GAPPS=true
+TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := lineage_ysl
+PRODUCT_NAME := corvus_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2
