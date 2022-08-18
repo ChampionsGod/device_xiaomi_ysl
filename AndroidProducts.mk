@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cipher_ysl.mk
+    $(LOCAL_DIR)/arrow_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    cipher_ysl-user \
-    cipher_ysl-userdebug \
-    cipher_ysl-eng
+    arrow_ysl-user \
+    arrow_ysl-userdebug \
+    arrow_ysl-eng
