@@ -14,10 +14,7 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit some common ArrowOS flags
 TARGET_BOOT_ANIMATION_RES := 720
-#CIPHER_OFFICIAL := true
-#CIPHER_GAPPS := true
-#CIPHER_MAINTAINER := Dhruv
-#TARGET_FACE_UNLOCK_SUPPORTED := true
+ARROW_GAPPS := true
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
