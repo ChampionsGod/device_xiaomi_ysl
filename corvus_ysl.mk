@@ -19,11 +19,11 @@ $(call inherit-product, device/xiaomi/ysl/device.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Inherit some common corvus flags
-RAVEN_LAIR=Official
-CORVUS_MAINTAINER=ChampionsGod
+RAVEN_LAIR := Official
+CORVUS_MAINTAINER := ROBIN
 USE_GAPPS=true
 TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
@@ -32,7 +32,7 @@ PRODUCT_DEVICE := ysl
 PRODUCT_NAME := corvus_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi S2
+PRODUCT_MODEL := Redmi Y2
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
