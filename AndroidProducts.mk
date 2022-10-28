@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ysl.mk
+    $(LOCAL_DIR)/cr_ysl.mk
+
+COMMON_LUNCH_CHOISES := \
+    cr_ysl-eng \
+    cr_ysl-userdebug \
+    cr_ysl-user
