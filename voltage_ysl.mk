@@ -9,19 +9,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-# Inherit some common ArrowOS flags
-TARGET_BOOT_ANIMATION_RES := 720
-ARROW_GAPPS := true
+# Inherit some common VoltageOS flags
+TARGET_BOOT_ANIMATION_RES := 1280
 
 # Inherit from ysl device
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ysl
-PRODUCT_NAME := arrow_ysl
+PRODUCT_NAME := voltage_ysl
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi S2

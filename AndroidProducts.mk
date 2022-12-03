@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_ysl.mk
+    $(LOCAL_DIR)/voltage_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_ysl-user \
-    arrow_ysl-userdebug \
-    arrow_ysl-eng
+    voltage_ysl-user \
+    voltage_ysl-userdebug \
+    voltage_ysl-eng
