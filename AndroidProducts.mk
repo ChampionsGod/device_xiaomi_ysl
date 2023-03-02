@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_ysl.mk
+    $(LOCAL_DIR)/spark_ysl.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_ysl-user \
-    arrow_ysl-userdebug \
-    arrow_ysl-eng
+    spark_ysl-user \
+    spark_ysl-userdebug \
+    spark_ysl-eng
